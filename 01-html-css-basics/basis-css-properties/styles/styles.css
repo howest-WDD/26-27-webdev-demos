@@ -1,0 +1,88 @@
+/* Universal selector: geldt voor ALLE elementen */
+* {
+  box-sizing: border-box;
+}
+
+/* Type selector: geldt voor het body-element */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Type selector: geldt voor elk section-element */
+section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== Kleur & Achtergrond ===== */
+p {
+  color: #2b2b2b; /* Tekstkleur (naam, hex, rgb, hsl) */
+  background-color: #f0f4f8; /* Achtergrondkleur */
+  padding: 10px;
+}
+
+/* ===== Lettergrootte ===== */
+div {
+  font-size: 24px; /* Grootte: px, rem, em */
+}
+
+/* ===== Dikte (Bold) ===== */
+strong {
+  font-weight: bold; /* of getallen: 400 (normaal), 600 (semi-bold), 700 (bold) */
+}
+
+/* ===== Cursief (Italic) ===== */
+em {
+  font-style: italic; /* opties: normal | italic | oblique */
+}
+
+/* ===== Uitlijning & Regelafstand ===== */
+blockquote {
+  text-align: center; /* opties: left | center | right | justify */
+  line-height: 1.6; /* Regelafstand (zonder eenheid = vermenigvuldiging) */
+}
+
+/* ===== Decoratie: Onderlijnen ===== */
+a {
+  text-decoration: underline; /* opties: none | underline | line-through */
+}
+
+/* ===== Decoratie: Doorstrepen ===== */
+del {
+  text-decoration: line-through;
+}
+
+/* ===== Hoofdletters (Uppercase) ===== */
+h3 {
+  text-transform: uppercase; /* opties: none | uppercase | lowercase | capitalize */
+}
+
+/* ===== Eerste Letter Hoofdletter (Capitalize) ===== */
+h4 {
+  text-transform: capitalize;
+}
+
+/* ===== Letter-spacing ===== */
+h5 {
+  letter-spacing: 2px; /* Ruimte tussen letters (tracking in design) */
+}
+
+/* ===== Word-spacing ===== */
+address {
+  word-spacing: 4px; /* Extra ruimte tussen afzonderlijke woorden */
+  font-style: normal;
+}
+
+/* ===== Lijststijl: Square ===== */
+ul {
+  list-style: square; /* opties: disc | circle | square | none */
+}
+
+/* ===== Lijststijl: Decimal ===== */
+ol {
+  list-style: decimal; /* opties: decimal | lower-alpha | lower-roman */
+}
