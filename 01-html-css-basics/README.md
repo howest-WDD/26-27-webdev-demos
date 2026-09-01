@@ -1,4 +1,4 @@
-# Week 01
+# Hoofdstuk 01
 
 Overzicht van alle demo-links uit [slides/01-html-css-basics/index.md](../slides/01-html-css-basics/index.md).
 

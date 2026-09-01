@@ -1,0 +1,24 @@
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.block-element {
+  background-color: hotpink;
+  border: 10px solid purple;
+  padding: 2rem;
+  margin: 2rem;
+  max-width: 500px;
+}
+
+.inline-element {
+  /* doesn't apply */
+  width: 500px;
+  height: 200px;
+  /* applies but behaves differently */
+  padding: 1rem;
+  margin: 1rem;
+  border: 10px solid white;
+  display: inline-block;
+}
