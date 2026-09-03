@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: absolute demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Position: Absolute</h1>
+      <p class="lead">
+        The element is positioned absolute relative to its nearest positioned
+        ancestor.
+      </p>
+
+      <label>
+        <input type="checkbox" id="toggle-position" />
+        Disable position: relative on container
+      </label>
+
+      <label>
+        <input type="checkbox" id="toggle-absolute" />
+        Disable position: absolute on absolute-box
+      </label>
+
+      <div class="container-box" id="container">
+        <div class="absolute-box">Absolute</div>
+        <p>
+          The absolute box is positioned relative to this container. If you
+          disable the position: relative on the container, the absolute box will
+          be positioned relative to the viewport.
+        </p>
+      </div>
+
+      <script>
+        const checkbox = document.getElementById("toggle-position");
+        const absoluteCheckbox = document.getElementById("toggle-absolute");
+        const container = document.getElementById("container");
+        const absoluteBox = document.querySelector(".absolute-box");
+
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            container.classList.add("no-position");
+          } else {
+            container.classList.remove("no-position");
+          }
+        });
+
+        absoluteCheckbox.addEventListener("change", () => {
+          if (absoluteCheckbox.checked) {
+            absoluteBox.classList.add("no-absolute");
+          } else {
+            absoluteBox.classList.remove("no-absolute");
+          }
+        });
+      </script>
+    </main>
+  </body>
+</html>
