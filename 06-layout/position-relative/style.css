@@ -69,11 +69,10 @@ h1 {
 }
 
 .relative {
-  /* position: relative; */
+  position: relative;
   top: 3rem;
   left: 3rem;
   background: #d32f2f;
-  /* padding-top: 10rem; */
 }
 
 .relative.use-margin {
