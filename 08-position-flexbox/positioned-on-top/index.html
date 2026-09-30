@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioned on top demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Positioned on top</h1>
+      <p class="lead">
+        Box 2 comes later in the HTML and overlaps box 1 because of a negative
+        <code>margin-top</code>. Without <code>position</code>, the element
+        lower in the HTML is on top. Give box 1 <code>position: relative</code>
+        and it jumps on top of box 2, although it is higher in the HTML and has
+        no <code>z-index</code>.
+      </p>
+
+      <label>
+        <input type="checkbox" id="toggle-position" />
+        Add <code>position: relative</code> to box 1
+      </label>
+
+      <section class="stack-area" aria-label="Positioned on top demo">
+        <div class="box box-1" id="box-1">
+          <span>Box 1</span>
+          <code id="box-1-position">position: static</code>
+        </div>
+        <div class="box box-2">
+          <span>Box 2</span>
+          <code>position: static</code>
+        </div>
+      </section>
+
+      <script>
+        const checkbox = document.getElementById("toggle-position");
+        const box1 = document.getElementById("box-1");
+        const box1Position = document.getElementById("box-1-position");
+
+        const setPosition = () => {
+          box1.classList.toggle("is-positioned", checkbox.checked);
+          box1Position.textContent = checkbox.checked
+            ? "position: relative"
+            : "position: static";
+        };
+
+        setPosition();
+        checkbox.addEventListener("change", setPosition);
+      </script>
+    </main>
+  </body>
+</html>
