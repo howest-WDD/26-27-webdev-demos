@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-size demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>background-size</h1>
+      <fieldset>
+        <legend>Kies een waarde</legend>
+        <label><input type="radio" name="size" value="cover" checked /> cover</label>
+        <label><input type="radio" name="size" value="contain" /> contain</label>
+        <label><input type="radio" name="size" value="auto" /> auto</label>
+        <label><input type="radio" name="size" value="100px 200px" /> 100px 200px</label>
+        <label><input type="radio" name="size" value="100% 100%" /> 100% 100%</label>
+        <label><input type="radio" name="size" value="50%" /> 50%</label>
+      </fieldset>
+      <p>Code: <code id="code">background-size: cover;</code></p>
+      <div class="box" id="box"></div>
+      <p class="explanation" id="explanation"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

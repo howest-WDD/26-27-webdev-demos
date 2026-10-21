@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-position demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>background-position</h1>
+      <fieldset>
+        <legend>Kies een waarde</legend>
+        <label><input type="radio" name="position" value="left top" /> left top</label>
+        <label><input type="radio" name="position" value="center top" /> center top</label>
+        <label><input type="radio" name="position" value="right top" /> right top</label>
+        <label><input type="radio" name="position" value="left center" /> left center</label>
+        <label><input type="radio" name="position" value="center center" checked /> center center</label>
+        <label><input type="radio" name="position" value="right bottom" /> right bottom</label>
+        <label><input type="radio" name="position" value="25% 75%" /> 25% 75%</label>
+        <label><input type="radio" name="position" value="10px 20px" /> 10px 20px</label>
+      </fieldset>
+      <p>Code: <code id="code">background-position: center center;</code></p>
+      <div class="box" id="box"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
