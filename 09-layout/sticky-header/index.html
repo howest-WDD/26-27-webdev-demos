@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky header</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <p class="header__logo">Mijn site</p>
+      <label>
+        position:
+        <select id="position">
+          <option value="static">static</option>
+          <option value="sticky" selected>sticky</option>
+          <option value="fixed">fixed</option>
+        </select>
+      </label>
+    </header>
+
+    <main class="page">
+      <h1>Sticky header</h1>
+      <p>Scroll en wissel de waarde van <code>position</code> in de header. Bij <code>fixed</code> verdwijnt de titel onder de header, bij <code>sticky</code> niet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 1.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 2.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 3.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 4.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 5.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 6.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 7.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 8.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 9.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 10.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 11.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 12.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 13.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 14.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus impedit repudiandae quasi voluptate doloribus tenetur molestias at neque repellat. Paragraaf 15.</p>
+    </main>
+
+    <script>
+      const header = document.getElementById("header");
+      document.getElementById("position").addEventListener("change", (e) => {
+        header.style.position = e.target.value;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Header: logo links, links rechts */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: aliceblue;
+}
+
+.header__logo {
+  margin: 0;
+  font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__link {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: steelblue;
+}
+
+
+/* Alles centreren */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  margin: 1rem;
+  background-color: aliceblue;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: steelblue;
+}

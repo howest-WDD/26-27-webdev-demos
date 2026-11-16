@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid items die overlappen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Grid items die overlappen</h1>
+      <div class="grid">
+        <p class="grid__item grid__item--a">A: kolom 1 tot 4</p>
+        <p class="grid__item grid__item--b">B: kolom 3 tot 6</p>
+      </div>
+      <p>
+        A en B delen kolom 3 en rij 2. Waar ze overlappen
+        ligt het laatste item in de HTML bovenaan. Probeer
+        <code>z-index</code> op A om de volgorde om te draaien.
+      </p>
+    </main>
+  </body>
+</html>

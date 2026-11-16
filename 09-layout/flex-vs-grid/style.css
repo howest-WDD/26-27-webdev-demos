@@ -1,0 +1,14 @@
+body { font-family: sans-serif; max-width: 40rem; margin: 1rem auto; }
+ul { list-style: none; padding: 0; gap: 1rem; }
+li { color: white; padding: 1.5rem; text-align: center; }
+li:nth-child(1n) { background-color: orange; }
+li:nth-child(2n) { background-color: orangered; }
+li:nth-child(3n) { background-color: red; }
+li:nth-child(4n) { background-color: darkred; }
+
+/* De laatste rij rekt uit: de content bepaalt */
+.flex { display: flex; flex-wrap: wrap; }
+.flex li { flex: 1 1 8rem; }
+
+/* De laatste rij blijft op het raster: de layout bepaalt */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); }

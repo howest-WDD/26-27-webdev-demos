@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox: assen en uitlijning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>Flexbox: assen en uitlijning</h1>
+
+      <form class="controls">
+        <label>
+          flex-direction
+          <select name="flex-direction">
+            <option>row</option>
+            <option>row-reverse</option>
+            <option>column</option>
+            <option>column-reverse</option>
+          </select>
+        </label>
+        <label>
+          justify-content
+          <select name="justify-content">
+            <option>flex-start</option>
+            <option>flex-end</option>
+            <option>center</option>
+            <option>space-between</option>
+            <option>space-around</option>
+            <option>space-evenly</option>
+          </select>
+        </label>
+        <label>
+          align-items
+          <select name="align-items">
+            <option>stretch</option>
+            <option>flex-start</option>
+            <option>flex-end</option>
+            <option>center</option>
+            <option>baseline</option>
+          </select>
+        </label>
+      </form>
+
+      <section class="container" id="container">
+        <p class="item">1</p>
+        <p class="item item--tall">2</p>
+        <p class="item">3</p>
+      </section>
+    </main>
+
+    <script>
+      const container = document.getElementById("container");
+      document.querySelector(".controls").addEventListener("change", (e) => {
+        container.style[e.target.name] = e.target.value;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 0.5rem;
+  height: 20rem;
+  padding: 0.5rem;
+  background-color: gainsboro;
+}
+
+.item {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.item:nth-child(1n) { background-color: orange; }
+.item:nth-child(2n) { background-color: orangered; }
+.item:nth-child(3n) { background-color: red; }
+.item:nth-child(4n) { background-color: darkred; }
+
+
+.item--tall {
+  padding-block: 2.5rem;
+}

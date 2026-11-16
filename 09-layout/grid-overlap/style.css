@@ -1,0 +1,6 @@
+body { font-family: sans-serif; margin: 0; }
+.hero { display: grid; }
+/* Alles in dezelfde cel: geen position nodig */
+.hero > * { grid-area: 1 / 1; }
+.hero__bg { min-height: 15rem; background: steelblue; }
+.hero__title { color: white; margin: 0; padding: 1rem; place-self: end start; }
